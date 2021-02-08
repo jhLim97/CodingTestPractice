@@ -22,11 +22,11 @@ for i in range(len(data)):
 # 방법 2. test
 dx = [0, 0, -1, 1]
 dy = [-1, 1, 0, 0]
-move-types = ['L', 'R', 'U', 'D']
+move_types = ['L', 'R', 'U', 'D']
 
 for i in data:
-  for j in range(len(move-types)):
-    if i == move-types[i]:
+  for j in range(len(move_types)):
+    if i == move_types[i]:
       nx = x + dx[i]
       ny = y + dy[i]
   
