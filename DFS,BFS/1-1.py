@@ -13,8 +13,8 @@ def dfs(x, y):
     graph[x][y] = 1
     dfs(x-1, y)
     dfs(x, y-1)
-    dfs(x+1, y)
     dfs(x, y+1)
+    dfs(x+1, y)
     return True
     
   return False
