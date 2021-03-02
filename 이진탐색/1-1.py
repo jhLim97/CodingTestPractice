@@ -1,7 +1,7 @@
 n = int(input())
-dataN = input().split()
+dataN = list(map(int, input().split()))
 m = int(input())
-dataM = input().split()
+dataM = list(map(int, input().split()))
 
 result = []
 
@@ -13,9 +13,9 @@ def binarySearch(data, start, end, target):
 
   mid = (start + end) // 2
 
-  if int(target) == int(data[mid]):
+  if target == data[mid]:
     return True
-  elif int(target) > int(data[mid]):
+  elif target > data[mid]:
     return binarySearch(data, mid + 1, end, target)
   else:
     return binarySearch(data, start, mid - 1, target)
@@ -27,3 +27,9 @@ for i in range(m):
     result.append("no")
 
   print(result[i], end=" ")
+
+  
+
+  
+  
+
