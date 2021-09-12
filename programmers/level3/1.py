@@ -4,8 +4,7 @@ def dfs(visited, computers, i):
     visited[i] = True
     for index, computer_ in enumerate(computers[i]):
         if computer_:
-            dfs(visited, computers, index)
-    
+            dfs(visited, computers, index)    
 def solution(n, computers):
     answer = 0
     visited = [False] * n
