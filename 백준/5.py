@@ -1,1 +1,1 @@
-will revised in 3hours
+백준 직사각형 풀기
